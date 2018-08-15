@@ -16,6 +16,7 @@ namespace TrackingList.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#660066"));
 
             base.OnCreate(bundle);
 

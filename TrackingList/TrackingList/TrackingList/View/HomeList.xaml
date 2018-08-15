@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TrackingList.View;assembly=TrackingList"
+             xmlns:viewModel="clr-namespace:TrackingList.ViewModel;assembly=TrackingList"
+             xmlns:local="clr-namespace:TrackingList"
+             x:Class="TrackingList.View.HomeList"
+             Title = "Rastreadores">
+
+    <ContentPage.BindingContext>
+        <viewModel:TrackerViewModel/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout Orientation="Vertical">
+        <Label Text="Lista de Rastreadores Homologados"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             BackgroundColor="Transparent"
+             HorizontalOptions="CenterAndExpand" />
+        <ListView x:Name="listView" SelectedItem="{Binding SelectedItem , Mode=TwoWay }" 
+              RowHeight="150" 
+              ItemsSource="{Binding CardViewCollection}" HasUnevenRows="True"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <view:CardsContentView/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

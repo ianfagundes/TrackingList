@@ -29,7 +29,8 @@ namespace TrackingList.ViewModel
                     Saidas = "Digital",
                     QtdSaidas = 2,
                     Telemetria = "RPM",
-                    QtdTelemetria = 2
+                    QtdTelemetria = 2,
+                    Imagem = "virloc.png"
 
 
                 },
@@ -43,7 +44,47 @@ namespace TrackingList.ViewModel
                     Saidas = "Digital",
                     QtdSaidas = 2,
                     Telemetria = "Hodometro",
-                    QtdTelemetria = 1
+                    QtdTelemetria = 1,
+                    Imagem = "virloc.png"
+                },
+                  new TrackerModel()
+                {
+                    ID = 1,
+                    Fabricante = "MXT",
+                    Rastreador = "MXT-160",
+                    Entradas = "Digital",
+                    QtdEntradas = 2,
+                    Saidas = "Digital",
+                    QtdSaidas = 2,
+                    Telemetria = "Hodometro",
+                    QtdTelemetria = 1,
+                    Imagem = "virloc.png"
+                },
+                  new TrackerModel()
+                {
+                    ID = 1,
+                    Fabricante = "MXT",
+                    Rastreador = "MXT-160",
+                    Entradas = "Digital",
+                    QtdEntradas = 2,
+                    Saidas = "Digital",
+                    QtdSaidas = 2,
+                    Telemetria = "Hodometro",
+                    QtdTelemetria = 1,
+                    Imagem = "virloc.png"
+                },
+                  new TrackerModel()
+                {
+                    ID = 1,
+                    Fabricante = "MXT",
+                    Rastreador = "MXT-160",
+                    Entradas = "Digital",
+                    QtdEntradas = 2,
+                    Saidas = "Digital",
+                    QtdSaidas = 2,
+                    Telemetria = "Hodometro",
+                    QtdTelemetria = 1,
+                    Imagem = "virloc.png"
                 },
 
             };

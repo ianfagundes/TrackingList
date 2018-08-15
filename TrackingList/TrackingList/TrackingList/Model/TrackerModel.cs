@@ -7,6 +7,7 @@ namespace TrackingList.Model
     public class TrackerModel
     {
         public int ID { get; set; }
+        public string Imagem { get; set; }
         public string Rastreador { get; set; }
         public string Fabricante { get; set; }
         public string Entradas { get; set; }

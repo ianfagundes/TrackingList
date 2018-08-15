@@ -10,9 +10,10 @@
     <ContentPage.BindingContext>
         <viewModel:TrackerViewModel/>
     </ContentPage.BindingContext>
-    
+
     <StackLayout Orientation="Vertical">
         <Label Text="Lista de Rastreadores Homologados"
+             Margin="0,20,0,10"
              VerticalOptions="Start"
              HorizontalTextAlignment="Center"
              VerticalTextAlignment="Center"

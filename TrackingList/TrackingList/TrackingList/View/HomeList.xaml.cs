@@ -10,7 +10,6 @@ namespace TrackingList.View
 		public HomeList ()
 		{
 			InitializeComponent ();
-            BindingContext = new TrackerModel();
         }
 	}
 }
